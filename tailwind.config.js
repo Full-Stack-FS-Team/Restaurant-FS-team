@@ -1,9 +1,19 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: [],
+module.exports = {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx,html}"],
   theme: {
-    extend: {},
+    extend: {
+      container: {
+        center: true,
+        padding: "1rem",
+      },
+      colors: {
+        primary: "#FF6363",
+      },
+      backgroundImage: {
+        homeBanner: "url('/images/demo-restaurant-home-banner-bg.jpg')",
+      },
+    },
   },
   plugins: [],
-}
-
+};
